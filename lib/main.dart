@@ -18,7 +18,7 @@ void main() {
 
 class Home extends StatelessWidget {
   final CallsAndMessagesService _service = locator<CallsAndMessagesService>();
-  String message = "Kaisi hai re tu maheeeeek ?";
+  String message = "Violent Activity detected at"+"Please send your help as soon as possible !";
   List<String> recipents = ["+919871197994"];
 
   final String number = "+919871197994";
