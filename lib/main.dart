@@ -195,5 +195,4 @@ void _sendSMS(String message, List<String> recipents) async {
       .catchError((onError) {
     print(onError);
   });
-  print(_result);
 }
