@@ -5,9 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get_it/get_it.dart';
 import 'package:flutter_sms/flutter_sms.dart';
-//
-//import 'package:google_maps_flutter/google_maps_flutter.dart';
-//
+
 void main() {
   setupLocator();
   runApp(MaterialApp(
@@ -18,7 +16,8 @@ void main() {
 
 class Home extends StatelessWidget {
   final CallsAndMessagesService _service = locator<CallsAndMessagesService>();
-  String message = "Violent Activity detected at"+"Please send your help as soon as possible !";
+  String message = "Violent Activity detected at Please send your help as soon as possible !";
+
   List<String> recipents = ["+919871197994"];
 
   final String number = "+919871197994";
@@ -27,6 +26,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         title: Text("रक्षक",
             style: GoogleFonts.courierPrime(
                 textStyle: TextStyle(
